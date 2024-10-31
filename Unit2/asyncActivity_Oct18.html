@@ -1,44 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-.item1 { grid-area: header; }
-.item2 { grid-area: header header; width: 300px; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
-.item6 {grid-area: menu;}
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
-  gap: 10px;
-  background-color: #f32121;
-  padding: 100px;
-}
-
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
-</style>
-</head>
-<body>
-
-
-<div class="grid-container">
-  <div class="item1">Header</div>
-  <div class="item2">Menu</div>
-  <div class="item3">Main</div>  
-  <div class="item4">Right</div>
-  <div class="item5">Footer</div>
-  <div class="item6">ETC</div>
+  <head>
+    <style>
+      .divrules{background-color: aqua;
+      height: 50px;
+    width: 50px;
+  margin: 10px;}
+  .mainContrainer{display: grid;
+  grid-template-columns: auto auto;}
+    </style>
+  </head>
+  <body>
+    <div class="divrules" style="width: 1200px;">1</div>
+    <div class="mainContrainer">
+      <div class="divrules"
+ style="width: 670px;  height: 300px;">2</div>
+<div class="divrules" style="width: 450px; height: 300px;">3</div> 
 </div>
-
-</body>
+<div class="divrules">4</div>
+<div class="divrules">5</div>
+<div class="divrules">6</div>
+<div class="divrules">7</div>
+  </body>
 </html>
